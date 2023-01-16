@@ -5,9 +5,108 @@
         <meta http-equiv="=X=UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
-        <script src="projeto-intro-web.js"></script>
+        <script src="projeto-intro-web.js" defer></script>
+        <link rel="stylesheet" href="projeto-intro-web.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;700&display=swap" rel="stylesheet">
     </head>
     <body>
-        Allan projeto-intro-web
+    <div class="container">
+        <header class="slide">
+            <img src="/assets/Logo studio projeto neon (horizontal).png" alt= "PSW - Projeto Studio Web">
+            <button class="home-adjust" onclick="window.location.href = '/projeto-intro-web.html'">Home</button>
+            <button class="movies-adjust" onclick="window.location.href = '/movies.html'">Movies</button>
+            <button class="series-adjust" onclick="window.location.href = '/series.html'">Series</button>
+            <!-- <div class="home-adjust"><h4>Home</h4></div>
+            <div class="movies-adjust"><h4>Movies</h4></div>
+            <div class="series-adjust"><h4>Series</h4></div> -->
+            <section class="botao">
+                <input onkeyup="buscar()" id="search" type="text" name="search" placeholder="Digite aqui" required>
+            </section>
+        </header>
+        <main>
+        <div class="smart">
+            
+            <nav class="displayNav">
+                <aside class="generoContainer">
+                    <button id="buttonGenero"><h2>Gêneros</h2></button>
+                    <input onkeyup="generosFilme()" type="text" id="pesquisa" placeholder="Gênero...">
+                    <ul class="hideBackground generos" id="generos">
+                        <li><a href="" >Ação</a></li>
+                        <li><a href="" >Aventura</a></li>
+                        <li><a href="" >Comédia</a></li>
+                        <li><a href="" >Drama</a></li>
+                        <li><a href="" >Espionagem</a></li>
+                        <li><a href="" >Família</a></li>
+                        <li><a href="" >Fantasia</a></li>
+                        <li><a href="" >Ficção científica</a></li>
+                        <li><a href="" >Filmes de guerra</a></li>
+                        <li><a href="" >Mistério</a></li>
+                        <li><a href="" >Musical</a></li>
+                        <li><a href="" >Filme policial</a></li>
+                        <li><a href="" >Romance</a></li>
+                        <li><a href="" >Terror</a></li>
+                    </ul>
+                </aside>
+                
+            </nav>
+            
+            <section class="pulse" id="menu">
+                <article>
+                    <img src="https://images.moviesanywhere.com/cb141a7d0f9183b2e626db5bef697f1d/1ba70436-9b46-49bd-a7ac-1371811705f3.jpg" alt="The Fast And The Furious">
+                    <p>Pets</p>
+                                    </article>
+                <article >
+                    <img src="https://prod.cdn.bbaws.net/TDC_Blockbuster_-_Production/3/340/UN-0159_po-reg-medium_orig.jpg" alt="The Fast And The Furious">
+                    <p>The Fast and The Furious</p>
+                                    </article>
+                <article>
+                    <img src="https://upload.wikimedia.org/wikipedia/pt/2/20/2_Fast_2_Furious_2003.jpg" alt="2 Fast 2 Furious">
+                    <p>2 Fast 2 Furious</p>
+                </article>
+                <article>
+                    <img src="https://upload.wikimedia.org/wikipedia/pt/thumb/f/f1/TFF-TokyoDrift-p%C3%B4ster.jpg/255px-TFF-TokyoDrift-p%C3%B4ster.jpg" alt="The Fast and the Furious: Tokyo Drift">
+                    <p>The Fast and the Furious: Tokyo Drift</p>
+                </article>
+                <article>
+                    <img src="https://br.web.img3.acsta.net/c_310_420/pictures/210/445/21044501_2013092621313492.jpg" alt="Fast & Furious 4">
+                    <p>Fast & Furious 4</p>
+                </article>
+                
+                <article>
+                    <img src="https://i.pinimg.com/originals/cb/4c/b1/cb4cb1eddd757f6d5b62e6a9840764c2.jpg" alt="Born to Race">
+                    <p>Born to Race</p>
+                </article>
+                <article>
+                    <img src="https://br.web.img3.acsta.net/pictures/210/123/21012312_20130613132958221.jpg" alt="Matilda">
+                    <p>Matilda</p>
+                </article>
+                <article>
+                    <img src="https://br.web.img3.acsta.net/c_310_420/pictures/17/11/28/18/32/3262971.jpg" alt="Extraordinário">
+                    <p>Extraordinário</p>
+                </article>
+                <article>
+                    <img src="https://br.web.img3.acsta.net/c_310_420/pictures/16/02/03/19/11/303307.jpg" alt="Como Eu Era Antes de Você">
+                    <p>Como Eu Era Antes de Você</p>
+                </article>
+                <article>
+                    <img src="https://br.web.img3.acsta.net/c_310_420/pictures/210/016/21001687_20130426011958954.jpg" alt="Minha Mãe é Uma Peça">
+                    <p>Minha Mãe é Uma Peça</p>
+                </article>
+                <article>
+                    <img src="https://br.web.img3.acsta.net/c_310_420/pictures/15/09/28/20/00/141739.jpg" alt="O Quarto de Jack">
+                    <p>O Quarto de Jack</p>
+                </article>
+                <article>
+                    EM BREVE
+                </article>
+            </section>
+        </main>
+        <footer>
+            <a class="iconFooter" id="icon01" href="https://github.com/allanrgc"><img src="/assets/github icon.png" alt="github"></a>
+            <a class="iconFooter" id="icon02" href="https://linktr.ee/allanrgc"><img src="/assets/linktree icon.png" alt="LinkTree"></a> 
+            <a class="iconFooter" id="icon03" href="https://www.instagram.com/allanrgc"><img src="/assets/instagram icon.png" alt="LinkTree"></a> 
+        </footer>
+        </div>
+    </div>
     </body>
 </html>

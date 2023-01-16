@@ -54,6 +54,17 @@ console.table(filme1)
 const filme2 = [titulo2,sinopse2,duracao2,anoDoFilme2,generoAcao2,personagens2]
 console.table(filme2)
 
+// const converter = (minutos) => {
+//   const horas = Math.floor(minutos/ 60);          
+//   const min = minutos % 60;
+//   const textoHoras = (`00${horas}`).slice(-2);
+//   const textoMinutos = (`00${min}`).slice(-2);
+  
+//   return `${textoHoras }:${textoMinutos}`;
+// };
+
+// console.log(converter(70));
+
 
 //MODO 2
 const filmes00 = []
@@ -75,11 +86,15 @@ let filme01 =
 
 if (filme01.generoAcao == true){
   filmes00.push(filme01)
-} else {alert(`O filme ${filme01.filme} que não é de ação`)}
+} else {
+  alert (`O filme ${filme01.filme} não é de ação`)
+}
 
 if (filme02.generoAcao == true){
   filmes00.push(filme02)
-} else {alert(`O filme ${filme02.filme} que não é de ação`)}
+} else {
+  alert (`O filme ${filme02.filme} não é de ação`)
+}
 console.log(filmes00)
 
 
@@ -88,3 +103,90 @@ console.log("Duração média dos filmes:", mediaDuracao)
 
 const generoAcao = generoAcao1 && generoAcao2;
 console.log("Gênero de Ação?",generoAcao);
+
+for(filmeco of filmes00){
+  for(propriedade in filmeco){
+    console.log(`${propriedade}: \n${filmeco[propriedade]}`)
+  }console.log("\n")
+}
+
+//Semana 3 . 3
+function chamadaDeFilme(filme03) {
+  filme03 = {
+  filme: "Guardiões da Galáxia",
+  sinopse: "O aventureiro do espaço Peter Quill torna-se presa de caçadores de recompensas depois que rouba a esfera de um vilão traiçoeiro, Ronan. Para escapar do perigo, ele faz uma aliança com um grupo de quatro extraterrestres.",
+  duracao: 122,
+  anoDoFilme: 2014,
+  generoAcao: true,
+  personagens: "Senhor das Estrelas, Gamora, Baby Groot, Rocket Raccoon, Drax O Destruidor, Nebula"
+};
+return `Venha assistir ao filme ${filme03.filme}, de ${filme03.anoDoFilme}, estrelado por ${filme03.personagens}.
+\n Sinopse: ${filme03.sinopse}
+\n Duração: ${filme03.duracao} minutos.`
+}
+
+function retornaChamadaDeFilme(filme) {
+  filme = {
+nome: 'O Diabo Veste Prada',
+ano: 2006,
+diretor: 'David Frankel',
+atores: ['Meryl Streep', 'Anne Hathaway', 'Emily Blunt', 'Stanley Tucci']
+};
+return `Venha assistir ao filme ${filme.nome}, de ${filme.ano}, dirigido por ${filme.diretor} e estrelado por ${filme.atores.join(', ')}.`
+}
+
+//Semana 3 . 4
+let filmesDestaque = [
+	{ nome: "The Fast and The Furious", ano: 2001, duracao: 106},
+	{ nome: "Pets", ano: 2016, duracao: 90},
+	{ nome: "Guardiões da Galáxia", ano: 2014, duracao: 122},
+]
+
+function filmesEmDestaque(filmesDestaque) {
+    const destaques = filmesDestaque.filter(filmesDestaque => filmesDestaque.ano > 2015)
+    return destaques
+}
+
+//Semana x
+function buscar (){
+  var input,filtro,menu,menuItens,links;
+  input = document.getElementById("search");
+  filtro = input.value.toLowerCase();
+  menu = document.getElementById("menu");
+  menuItens = menu.getElementsByTagName("article");
+  for (var i = 0; i < menuItens.length; i++) {
+    links = menuItens[i].getElementsByTagName("p")[0];
+    if(links.innerHTML.toLowerCase().indexOf(filtro)>-1){
+      menuItens[i].style.display="";
+    }else{
+      menuItens[i].style.display="none"
+    }
+    
+  }
+}
+
+const buttonGenero = document.getElementById("buttonGenero");
+
+  buttonGenero.addEventListener("click", () => {
+    const generoContainer = document.getElementById("generos");
+    generoContainer.classList.toggle("hideBackground");
+    
+  });
+
+
+function generosFilme (){
+  var input,filtro,menu,menuItens,links;
+  input = document.getElementById("pesquisa");
+  filtro = input.value.toUpperCase();
+  menu = document.getElementById("generos");
+  menuItens = menu.getElementsByTagName("li");
+  for (var i = 0; i < menuItens.length; i++) {
+    links = menuItens[i].getElementsByTagName("a")[0];
+    if(links.innerHTML.toUpperCase().indexOf(filtro)>-1){
+      menuItens[i].style.display="";
+    }else{
+      menuItens[i].style.display="none"
+    }
+    
+  }
+}
