@@ -16,11 +16,8 @@
             <button class="home-adjust" onclick="window.location.href = '/projeto-intro-web.html'">Home</button>
             <button class="movies-adjust" onclick="window.location.href = '/movies.html'">Movies</button>
             <button class="series-adjust" onclick="window.location.href = '/series.html'">Series</button>
-            <!-- <div class="home-adjust"><h4>Home</h4></div>
-            <div class="movies-adjust"><h4>Movies</h4></div>
-            <div class="series-adjust"><h4>Series</h4></div> -->
             <section class="botao">
-                <input onkeyup="buscar()" id="search" type="text" name="search" placeholder="Digite aqui" required>
+                <input onkeyup="buscar()" id="search" type="text" name="search" placeholder="Procure pelo filme" required>
             </section>
         </header>
         <main>
@@ -29,7 +26,7 @@
             <nav class="displayNav">
                 <aside class="generoContainer">
                     <button id="buttonGenero"><h2>Gêneros</h2></button>
-                    <input onkeyup="generosFilme()" type="text" id="pesquisa" placeholder="Gênero...">
+                    <input onkeyup="generosFilme()" type="text" id="pesquisa" placeholder="Clique acima ou digite o gênero...">
                     <ul class="hideBackground generos" id="generos">
                         <li><a href="" >Ação</a></li>
                         <li><a href="" >Aventura</a></li>
@@ -96,7 +93,7 @@
                     <img src="https://br.web.img3.acsta.net/c_310_420/pictures/15/09/28/20/00/141739.jpg" alt="O Quarto de Jack">
                     <p>O Quarto de Jack</p>
                 </article>
-                <article>
+                <article class="soon">
                     EM BREVE
                 </article>
             </section>

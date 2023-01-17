@@ -73,7 +73,7 @@
   }
 
   main{
-    border: 2px solid violet;
+    /* border: 2px solid violet; */
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(1fr);
@@ -87,7 +87,7 @@
 
   .displayNav{
     display: flex;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     background-color: red;
     justify-content: space-between;
     margin: 1% 3%;
@@ -96,7 +96,7 @@
   .generoContainer{
     background-color: #252525de;
     /* width: 12rem; */
-    width: 60rem;
+    width: 100vw;
   }
   .generoContainer li a{
     padding: 0.4rem 1.5rem;
@@ -129,6 +129,7 @@
     margin: 0px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
   }
   .hideBackground{
     display: none;
@@ -140,7 +141,7 @@
     background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
     border: 0.125rem solid orangered;
-    /* width: 16rem; */
+    width: 16rem;
     height: 2rem;
     margin: 0.75rem;
   }
@@ -203,6 +204,12 @@
     height: 12em;
     border-radius: 1.5rem;
   }
+  .soon{
+    border: 1px solid orangered;
+    border-radius: 3rem;
+    height: 180px;
+    margin: 0 1% 1% 1%;
+  }
   
   footer{
     /* border: 3px solid gold; */
@@ -232,10 +239,27 @@
     
   }
   header{
-    height: 7vh;
+    height: 9vh;
+    grid-template-columns: repeat(5, 1fr);
   }
   header > img{
     height: 2rem;
+  }
+  #search{
+    width: 8rem;
+    margin: 0 1%;
+  }
+  .home-adjust{
+    width: 2rem;
+    margin: 0.25rem 0.25rem 0.25rem 0.25rem;
+  }
+  .movies-adjust{
+    width: 2rem;
+    margin: 0.25rem 0.25rem 0.25rem 0.25rem;
+  }
+  .series-adjust{
+    width: 2rem;
+    margin: 0.25rem 0.25rem 0.25rem 0.25rem;
   }
   .pulse{
     display: grid;
@@ -263,6 +287,21 @@
   header > img{
     height: 2.5rem;
   }
+  #search{
+    width: 10rem;
+  }
+  .home-adjust{
+    width: 2rem;
+    margin: 0.25rem 0.5rem 0.25rem 0.75rem;
+  }
+  .movies-adjust{
+    width: 2rem;
+    margin: 0.25rem 0.5rem 0.25rem 0.5rem;
+  }
+  .series-adjust{
+    width: 2rem;
+    margin: 0.25rem 0.5rem 0.25rem 0.5rem;
+  }
   .pulse{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -280,6 +319,7 @@
   article > img{
     height: 10em;
   }
+  
 }
 
   @media screen and (min-device-width : 801px) and (max-device-width : 1200px) {
@@ -290,7 +330,18 @@
   header > img{
     height: 3rem;
   }
-  
+  .home-adjust{
+    font-size: 0.625em;
+    margin: 0.25rem 1rem 0.25rem 2rem;
+  }
+  .movies-adjust{
+    font-size: 0.5em;
+    margin: 0.25rem 1rem;
+  }
+  .series-adjust{
+    font-size: 0.5em;
+    margin: 0.25rem 1rem;
+  }
   .pulse{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -311,6 +362,7 @@
     height: 1.8rem;
     width: 1.8rem;
   }
+  
 }
 @media screen and (min-device-width : 1201px) {
   /* PC */
@@ -340,4 +392,5 @@
     height: 2.1rem;
     width: 2.1rem;
   }
+  
 }
