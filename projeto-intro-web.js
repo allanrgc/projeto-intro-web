@@ -54,17 +54,6 @@ console.table(filme1)
 const filme2 = [titulo2,sinopse2,duracao2,anoDoFilme2,generoAcao2,personagens2]
 console.table(filme2)
 
-// const converter = (minutos) => {
-//   const horas = Math.floor(minutos/ 60);          
-//   const min = minutos % 60;
-//   const textoHoras = (`00${horas}`).slice(-2);
-//   const textoMinutos = (`00${min}`).slice(-2);
-  
-//   return `${textoHoras }:${textoMinutos}`;
-// };
-
-// console.log(converter(70));
-
 
 //MODO 2
 const filmes00 = []
