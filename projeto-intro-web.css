@@ -23,7 +23,7 @@
     color: #ff7b00;
     background: linear-gradient(top, #252525 0%, #000000 75%, #828282 100%);
     background: linear-gradient(to bottom, #252525 0%, #000000 75%, #828282 100%);
-    height: 5rem;
+    height: 9vh;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
   
@@ -39,7 +39,7 @@
     animation-iteration-count: 1;
   }
 
-  @keyframes slidein {
+  /* @keyframes slidein {
     from {
       margin-left: 100%;
       width: 0%;
@@ -49,7 +49,7 @@
       margin-right: 0%;
       width: 100%;
     }
-  }
+  } */
   .home-adjust{
     font-size: 0.625em;
     margin: 0.25rem 1rem 0.25rem 6rem;
@@ -374,8 +374,6 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    /* grid-template-columns: repeat(4, 1fr); */
-    /* grid-template-rows: repeat(2, 1fr); */
     justify-items: center;
     gap: 1.5rem 0;
   }

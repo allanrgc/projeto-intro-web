@@ -5,7 +5,7 @@
         <meta http-equiv="=X=UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
-        <script src="projeto-intro-web.js"></script>
+        <script src="movies.js"></script>
         <link rel="stylesheet" href="movies.css">
         <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;700&display=swap" rel="stylesheet">
     </head>
@@ -16,19 +16,15 @@
             <button class="home-adjust" onclick="window.location.href = '/projeto-intro-web.html'">Homes</button>
             <button class="movies-adjust" onclick="window.location.href = '/movies.html'">Movies</button>
             <button class="series-adjust" onclick="window.location.href = '/series.html'">Series</button>
-            <!-- <div class="home-adjust"><h4>Home</h4></div>
-            <div class="movies-adjust"><h4>Movies</h4></div>
-            <div class="series-adjust"><h4>Series</h4></div> -->
-        </header>
-        <main>
-        <div class="smart">
             <section class="botao">
-                <input type="text">
+                <input onkeyup="buscar()" id="search" type="text" name="search" placeholder="Procure pelo filme" required>
                 <button class="search-style">Pesquisar</button>
             </section>
-            
-            <section class="pulse">
-                <article>
+        </header>
+        <main>
+        <div class="smart"> 
+            <section class="pulse" id="menu">
+                <article >
                     <img src="https://images.moviesanywhere.com/cb141a7d0f9183b2e626db5bef697f1d/1ba70436-9b46-49bd-a7ac-1371811705f3.jpg" alt="The Fast And The Furious">
                     <p><b>Filme:</b> Pets</p>
                     <p><b>Sinopse:</b> Max, um cão da raça terrier, precisa aprender a conviver com Duke, o novo cão do seu dono.</p>
@@ -143,6 +139,7 @@
             <a id="icon01" href="https://github.com/allanrgc"><img src="/assets/github icon.png" alt="github"></a>
             <a id="icon02" href="https://linktr.ee/allanrgc"><img src="/assets/linktree icon.png" alt="LinkTree"></a> 
             <a id="icon03" href="https://www.instagram.com/allanrgc"><img src="/assets/instagram icon.png" alt="LinkTree"></a> 
+            <p id="identidade">₢ Allan</p>
         </footer>
         </div>
     </div>

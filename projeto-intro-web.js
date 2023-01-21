@@ -136,6 +136,29 @@ function filmesEmDestaque(filmesDestaque) {
     return destaques
 }
 
+const mediaDuracaoFilmes = [
+  {nome: "Pets", duracao: 90},
+  {nome: "The Fast and The Furious", duracao: 106},
+  {nome: "2 Fast 2 Furious", duracao: 107},
+  {nome: "The Fast and The Furious: Tokyo Drift", duracao: 104},
+  {nome: "The Fast and The Furious 4", duracao: 107},
+  {nome: "Born to Race", duracao: 98},
+  {nome: "Matilda", duracao: 98},
+  {nome: "Extraordinário", duracao: 113},
+  {nome: "Como Eu Era Antes de Você", duracao: 110},
+  {nome: "Minha Mãe é Uma Peça", duracao: 85},
+  {nome: "O Quarto de Jack", duracao: 118},
+  {nome: "Pets", duracao: 90},
+];
+
+let soma = 0;
+for (let i = 0; i < mediaDuracaoFilmes.length; i++) {
+  soma += mediaDuracaoFilmes[i].duracao;
+}
+
+const media = soma / mediaDuracaoFilmes.length;
+console.log(`A média de duração dos ${mediaDuracaoFilmes.length} filmes listados é de ${media} minutos`);
+
 //Semana x
 function buscar (){
   var input,filtro,menu,menuItens,links;
@@ -179,3 +202,6 @@ function generosFilme (){
     
   }
 }
+
+const identidade = document.getElementById("identidade")
+identidade.innerHTML += 'Allan Rafael'
