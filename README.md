@@ -21,7 +21,7 @@ A página consiste em um HTML, ligado a um ou mais arquivos CSS, e um ou mais ar
 
 
 
-[Exemplo](https://user-images.githubusercontent.com/11279432/180304632-97d6705d-100c-4272-8255-8aae19813700.mov)
+--[Exemplo](https://user-images.githubusercontent.com/11279432/180304632-97d6705d-100c-4272-8255-8aae19813700.mov)
 
 
 
